@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Forms</title>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <section>
+            <h2>Profil</h2>
+            <p> Hier können Sie Ihre......</p>
+            <form action="submit.html" method="post"  autocomplete="on">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" tabindex="1" autofocus placeholder="Dr." required><br><br>
+
+                    <label for="fname">First Name: </label>
+                    <input type="text" id="fname" name="fname" required  tabindex="2" placeholder="Peter"><br><br>
+
+                    <label for="lname">Last Name: </label>
+                    <input type="text" id="lname" name="lname" required tabindex="3" placeholder="Muster"><br><br>
+
+                    <p>Gender: </p>
+                    <label for="masculine">M</label>
+                    <input type="radio" id="masculine" name="gender" value="masculine" tabindex="4">
+                    <label for="feminine" >F</label>
+                    <input type="radio" id="feminine" name="gender" value="feminine" tabindex="5">
+                    <label for="neuter">N</label>
+                    <input type="radio" id="neuter" name="gender" value="neuter" tabindex="6"><br><br>
+
+                    <p>Language</p>
+                    <label for="de">DE</label>
+                    <input type="radio" id="de" name="lang" value="de" tabindex="7"><br>
+                    <label for="fr">FR</label>
+                    <input type="radio" id="fr" name="lang" value="fr" tabindex="8"><br>
+                    <label for="it">IT</label>
+                    <input type="radio" id="it" name="lang" value="it" tabindex="9"><br>  
+                </fieldset><br><br>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="tel">Telefon </label>
+                    <input type="tel" id="tel" name="tel" tabindex="10"><br><br>
+
+                    <label for="tel2">Mobile</label>
+                    <input type="tel" id="tel2" name="tel2"placeholder="optional" tabindex="11"><br><br>
+
+                    <label for="tel2">Hauptnummer </label>
+                    <input type="text" id="hauptnummer" name="hauptnummer"placeholder="optional" tabindex="12"><br><br>
+
+                    <label for="fax">Fax </label>
+                    <input type="tel" id="fax" name="fax" placeholder="optional" tabindex="13"><br><br>
+                    
+                    <label for="email">Mail1 </label>
+                    <input type="email" id="email" name="email" required tabindex="14"><br><br>
+
+                    <label for="email4">Mail2 </label>
+                    <input type="email" id="email2" name="email2" placeholder="optional" tabindex="15"><br><br>
+
+                </fieldset><br><br>
+                <fieldset>
+                    <legend>Adressdaten</legend>
+                    <label for="firma">Firma </label>
+                    <input type="text" id="firma" name="firma" tabindex="16" required><br><br>
+
+                    <label for="zfirma"> Zusatz Fitma </label>
+                    <input type="text" name="zfirma" id="zfirma" tabindex="17" placeholder="optional"><br><br>
+
+                    <label for="homepage">Homepage </label>
+                    <input type="url" id="homepage" name="homepage" tabindex="18" placeholder="optional"><br><br>
+
+                    <label for="addresse">Adresse/Haus Nr </label>
+                    <input type="text" id="addresse" name="addresse" required placeholder="Musterstrasse"><br><br>
+
+                    <label for="addresse2">Zusatz Adresse </label>
+                    <input type="text" id="addresse2" name="addresse2" placeholder="optional"><br><br>
+
+                    <label for="addresse">Postfach </label>
+                    <input type="text" id="addresse" name="addresse" placeholder="optional"><br><br>
+
+                    <label for="addresse">PLZ/ort </label>
+                    <input type="number" id="plz" name="plz" placeholder="8800">
+                    <input type="text" id="ort" name="plz" placeholder="Musterstadt"><br><br>
+
+                    <label for="canton">Kanton/Land</label>
+                    <input type="text" id="canton" name="canton" placeholder="ZH">
+                    <input type="text" id="canton2" name="canton2" placeholder="Schweiz">
+                </fieldset><br><br>
+                <input type="submit" value="speichern">
+            </form>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

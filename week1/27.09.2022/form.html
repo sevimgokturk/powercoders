@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Forms</title>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <section>
+            <h2>Registration Form</h2>
+            <form action="submit.html" method="post"  autocomplete="on">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fname">First Name: </label>
+                    <input type="text" id="fname" name="fname" required autofocus tabindex="1"><br><br>
+                    <label for="lname">Last Name: </label>
+                    <input type="text" id="lname" name="lname" required tabindex="2"><br><br>
+                    <label for="brday">Birthday: </label>
+                    <input type="date" id="brday" name="brday" required tabindex="3"><br><br>
+                    <p>Gender: </p>
+                    <label for="masculine">masculine</label>
+                    <input type="radio" id="masculine" name="gender" value="masculine" tabindex="4">
+                    <label for="feminine" >feminine</label>
+                    <input type="radio" id="feminine" name="gender" value="feminine" tabindex="5">
+                    <label for="neuter">neuter</label>
+                    <input type="radio" id="neuter" name="gender" value="neuter" tabindex="6"><br><br>
+                    <p>Please select your age:</p>
+                    <label for="age1">0 - 30</label>
+                    <input type="radio" id="age1" name="age" value="30"><br>
+                    <label for="age2">31 - 60</label>
+                    <input type="radio" id="age2" name="age" value="60"><br>
+                    <label for="age3">61 - 100</label>
+                    <input type="radio" id="age3" name="age" value="100"><br>  
+                </fieldset><br><br>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="email"> Email: </label>
+                    <input type="email" id="email" name="email" required placeholder="example@gmail.com" tabindex="7"><br><br>
+                    <label for="tel">Phone Number: </label>
+                    <input type="tel" id="tel" name="tel" required placeholder="+41 00 000 00 00" tabindex="8"><br><br>
+                </fieldset><br><br>
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <label for="color">Which color do you prefer? </label>
+                    <input type="color" id="color" name="color" tabindex="9"><br><br>
+                    <label for="season">Which season do you prefer? </label>
+                    <select name="season" id="season" tabindex="10">
+                        <option value="chose_one">chose one</option>
+                        <option value="winter">winter</option>
+                        <option value="autumn">autumn</option>
+                        <option value="summer">summer</option>
+                        <option value="spring">spring</option>
+                    </select>
+                    <label></label>
+                </fieldset><br><br>
+                <input type="submit" value="submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
